@@ -1,0 +1,15 @@
+{% extends  'base.html' %}
+
+{% block title %} Вход {% endblock %}
+
+{% block name %}Главная{% endblock %}
+
+{% block body %}
+<div class="container mt-3">
+    <p>Email: {{ email }}</p>
+    <p>Password: {{ password }}</p>
+    <form action="/delete_cookie" method="post">
+        <button type="submit">Удалить</button>
+    </form>
+</div>
+{% endblock %}
